@@ -12,7 +12,7 @@
     background-color: #f5c3d7;
  }
  .navbar{
-    background-color:#f769a2;
+    background-color:#ff0066;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -51,6 +51,35 @@
 .navbar-menus-container{
     margin-left: 450px;
 }
+.shop-img{
+    width:400px;
+    margin: 30px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-title{
+    font-size: 50px;
+    color: #fa0064;
+}
+.header-description{
+    font-size: 30px;
+    color: black;
+}
+.header-button-explore{
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#fa0064 ;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
 @media only screen and (max-width:600px){
     .navbar-menus-container{
     margin-left: auto;
@@ -68,12 +97,38 @@
 .navbar{
     flex-direction: column;
 }
+.shop-img{
+    width:270px;
+}
+.header-title{
+    font-size: 30px;
+}
+.header-description{
+    font-size: 20px;
+}
+.header-button-explore{
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 @media only screen and (min-width:601px ) and (max-width:800px){
     .navbar-menus-container{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+
+}
+.header-button-explore{
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 
@@ -97,6 +152,20 @@
 
         
 
+    </div>
+
+    <div class="header-container">
+        <div>
+            <img src="./images/rem-bg.png" class="shop-img">
+        </div>
+        
+        <div>
+            <h1 class="header-title">WE BAKE YOUR DREAMS</h1>
+            <p class="header-description">Surprise your loved ones order Now !</p>
+
+            <button class="header-button-explore" type="button">Explore Cakes</button>
+
+        </div>
     </div>
 </body>
 </html>
